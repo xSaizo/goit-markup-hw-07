@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="modern-nomalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <!-- Header -->
-    <header class="header-studio">
+    <header class="global-header">
       <div class="container">
-        <a href="https://webstudio.is" class="webstudio-logo"
-          ><span class="web">Web</span>Studio</a
+        <a href="https://webstudio.is" class="global-header__logo"
+          ><span class="global-header__logo--part">Web</span>Studio</a
         >
-        <nav class="main-navigation">
-          <ul class="nav-links">
+        <nav class="global-header__nav">
+          <ul class="global-header__menu">
             <li>
               <a
                 href="index.html"
@@ -32,9 +32,9 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-adress">
+        <ul class="global-header__adress">
           <li>
-            <div class="header-icons">
+            <div class="global-header__icons">
               <a href="mailto:info@devstudio.com" aria-label="mail-icon">
                 <svg class="mail-icon">
                   <use href="./images/icons.svg.svg#icon-envelope"></use>
@@ -45,7 +45,7 @@
           </li>
           <li></li>
           <li>
-            <div class="header-icons">
+            <div class="global-header__icons">
               <a href="tel:+12127724150" aria-label="tel-icon">
                 <svg class="tel-icon">
                   <use href="./images/icons.svg.svg#icon-smartphone"></use>
@@ -60,21 +60,21 @@
 
     <main>
       <!-- Hero section -->
-      <section class="hero-section">
+      <section class="section--hero-section">
         <div class="container">
-          <h1 id="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button type="button" class="button" data-modal-open>
+          <h1 id="hero--title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+          <button type="button" class="form-button" data-modal-open>
             Request our services
           </button>
         </div>
       </section>
 
       <!-- Ability section -->
-      <section class="ability-section section">
+      <section class="section--skills-section section">
         <div class="container">
           <ul>
             <li>
-              <div class="div-icon">
+              <div class="skills-section__icon">
                 <svg>
                   <use href="./images/icons.svg.svg#icon-antenna"></use>
                 </svg>
@@ -88,7 +88,7 @@
             </li>
 
             <li>
-              <div class="div-icon">
+              <div class="skills-section__icon">
                 <svg>
                   <use href="./images/icons.svg.svg#icon-clock"></use>
                 </svg>
@@ -103,7 +103,7 @@
             </li>
 
             <li>
-              <div class="div-icon">
+              <div class="skills-section__icon">
                 <svg>
                   <use href="./images/icons.svg.svg#icon-diagram"></use>
                 </svg>
@@ -117,7 +117,7 @@
             </li>
 
             <li>
-              <div class="div-icon">
+              <div class="skills-section__icon">
                 <svg>
                   <use href="./images/icons.svg.svg#icon-astronaut"></use>
                 </svg>
@@ -133,11 +133,11 @@
         </div>
       </section>
       <!-- "what we do" section -->
-      <section class="what-we-do-section section">
+      <section class="section--what-we-do-section section">
         <div class="container">
           <h2>What we do</h2>
           <ul>
-            <li class="what-we-do-img">
+            <li class="what-we-do-section_img">
               <img
                 src="./images/PC-img.jpg"
                 alt="We working on computer"
@@ -145,7 +145,7 @@
               />
               <p>DESKTOP APPS</p>
             </li>
-            <li class="what-we-do-img">
+            <li class="what-we-do-section_img">
               <img
                 src="./images/Phone-img.jpg"
                 alt="We working on phone"
@@ -153,7 +153,7 @@
               />
               <p>Mobile APPS</p>
             </li>
-            <li class="what-we-do-img">
+            <li class="what-we-do-section_img">
               <img
                 src="./images/Tablet-img.jpg"
                 alt="We working on tablet"
@@ -165,7 +165,7 @@
         </div>
       </section>
       <!-- Our Team Section -->
-      <section class="our-team-section section">
+      <section class="section--our-team-section section">
         <div class="container">
           <h2>Our Team</h2>
           <ul>
@@ -177,7 +177,7 @@
               />
               <h4>Christopher Walker</h4>
               <p>Product Designer</p>
-              <div class="card-social-link">
+              <div class="our-team__card-social-links">
                 <a
                   href="https://www.instagram.com/"
                   class="icon"
@@ -219,7 +219,7 @@
               <img src="./images/Kylle-Evans.jpg" alt="Photo" width="270" />
               <h4>Kylle Kylle Evans</h4>
               <p>Frontend Developer</p>
-              <div class="card-social-link">
+              <div class="our-team__card-social-links">
                 <a
                   href="https://www.instagram.com/"
                   class="icon"
@@ -261,7 +261,7 @@
               <img src="./images/Ryan-Harris.jpg" alt="Photo" width="270" />
               <h4>Ryan Harris</h4>
               <p>Marketing</p>
-              <div class="card-social-link">
+              <div class="our-team__card-social-links">
                 <a
                   href="https://www.instagram.com/"
                   class="icon"
@@ -303,7 +303,7 @@
               <img src="./images/Tyler-Moore.jpg" alt="Photo" width="270" />
               <h4>Tyler Moore</h4>
               <p>UI Designer</p>
-              <div class="card-social-link">
+              <div class="our-team__card-social-links">
                 <a
                   href="https://www.instagram.com/"
                   class="icon"
@@ -345,7 +345,7 @@
         </div>
       </section>
       <!-- Regular Customers section -->
-      <section class="regular-customers-section">
+      <section class="section--regular-customers-section">
         <div class="container">
           <h2>Regular Customers</h2>
           <ul>
@@ -386,16 +386,18 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer-section">
-      <div class="container footer-container">
-        <div class="adress-container">
-          <a href="https://webstudio.is" class="webstudio-logo-footer"
-            ><span class="web-footer">Web</span>Studio</a
+    <footer class="section--footer-section">
+      <div class="container container--footer">
+        <div>
+          <a href="https://webstudio.is" class="footer__logo"
+            ><span class="footer__logo-part">Web</span>Studio</a
           >
           <address>
             <ul>
               <li>
-                <a class="efective-address">695 Park Ave, NY 10065, USA</a>
+                <a href="-" class="footer__adress"
+                  >695 Park Ave, NY 10065, USA</a
+                >
               </li>
               <li>
                 <a href="mailto:info@studio.com">info@studio.com</a>
@@ -406,9 +408,9 @@
             </ul>
           </address>
         </div>
-        <div class="social-links-footer">
+        <div class="footer__social-links">
           <h4>FIND US ON</h4>
-          <div class="social-links-icons">
+          <div class="footer__social-links-icons">
             <a
               href="https://www.instagram.com/"
               class="icon"
@@ -435,10 +437,10 @@
             </a>
           </div>
         </div>
-        <div class="footer-subscribe-form">
+        <div class="footer__subscribe-form">
           <h4>Subscribe to the newsletter</h4>
-          <div class="input-button">
-            <form class="footer-form" name="subscribe">
+          <div class="form__button">
+            <form class="footer__form" name="subscribe">
               <input type="email" name="email" placeholder="E-mail" />
               <button type="submit">
                 Subscribe
@@ -453,13 +455,13 @@
     </footer>
 
     <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
+      <div class="modal__content">
         <div>
-          <button class="close-btn" data-modal-close>&times;</button>
-          <div class="modal-form">
+          <button class="modal__close-btn" data-modal-close>&times;</button>
+          <div class="modal__form">
             <h4>Leave your information and we'll call you back</h4>
-            <form class="form">
-              <label class="form-group">
+            <form class="modal__form-inputs">
+              <label class="modal__form-groups">
                 <span class="label-text">Name</span>
                 <input
                   type="text"
@@ -467,14 +469,14 @@
                   name="name"
                   autocomplete="additional-name"
                 />
-                <svg class="input-icon">
+                <svg class="form__input-icon">
                   <use
                     href="./images/modalsign.svg.svg#icon-person-black"
                   ></use>
                 </svg>
               </label>
 
-              <label class="form-group">
+              <label class="modal__form-groups">
                 <span class="label-text">Telephone</span>
                 <input
                   type="tel"
@@ -482,11 +484,11 @@
                   name="telephone"
                   autocomplete="tel"
                 />
-                <svg class="input-icon">
+                <svg class="form__input-icon">
                   <use href="./images/modalsign.svg.svg#icon-phone-black"></use>
                 </svg>
               </label>
-              <label class="form-group">
+              <label class="modal__form-groups">
                 <span class="label-text">E-mail</span>
                 <input
                   type="email"
@@ -494,12 +496,12 @@
                   name="email"
                   autocomplete="email"
                 />
-                <svg class="input-icon">
+                <svg class="form__input-icon">
                   <use href="./images/modalsign.svg.svg#icon-email-black"></use>
                 </svg>
               </label>
 
-              <label class="comments-form">
+              <label class="modal__form-textarea">
                 <span class="label-text">Comments</span>
                 <textarea
                   class="textarea"
@@ -508,22 +510,22 @@
                   placeholder="Enter the text"
                 ></textarea>
               </label>
-              <label class="checkbox">
+              <label class="form__checkbox">
                 <input
-                  class="checkbox-input"
+                  class="form__checkbox-input"
                   type="checkbox"
                   name="checkbox"
                   required
                 />
 
-                <div class="checked-box">
+                <div class="form_checked-box">
                   <svg>
                     <use
                       href="./images/modalsign.svg.svg#icon-icon-check"
                     ></use>
                   </svg>
                 </div>
-                <div class="unchecked-box">
+                <div class="form_unchecked-box">
                   <svg>
                     <use
                       href="./images/modalsign.svg.svg#icon-unchecked-icon"

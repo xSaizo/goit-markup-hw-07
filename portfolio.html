@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
     <title>WebStudio Portfolio</title>
   </head>
   <body>
     <!-- Header -->
-    <header class="header-studio">
+    <header class="global-header">
       <div class="container">
-        <a href="https://webstudio.is" class="webstudio-logo"
-          ><span class="web">Web</span>Studio</a
+        <a href="https://webstudio.is" class="global-header__logo"
+          ><span class="global-header__logo--part">Web</span>Studio</a
         >
-        <nav class="main-navigation">
-          <ul class="nav-links">
+        <nav class="global-header__nav">
+          <ul class="global-header__menu">
             <li>
               <a href="index.html" class="studio-link">Studio</a>
             </li>
@@ -31,9 +31,9 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-adress">
+        <ul class="global-header__adress">
           <li>
-            <div class="header-icons">
+            <div class="global-header__icons">
               <a href="mailto:info@devstudio.com" aria-label="mail-icon"
                 ><svg class="mail-icon">
                   <use href="./images/icons.svg.svg#icon-envelope"></use>
@@ -44,7 +44,7 @@
           </li>
           <li></li>
           <li>
-            <div class="header-icons">
+            <div class="global-header__icons">
               <a href="tel:+12127724150" aria-label="tel-icon"
                 ><svg class="tel-icon">
                   <use href="./images/icons.svg.svg#icon-smartphone"></use>
@@ -58,25 +58,25 @@
     </header>
     <!-- Main Section -->
     <main>
-      <ul class="portfolio-buttons container">
+      <ul class="portfolio--filter-buttons container">
         <li>
-          <button type="button">All</button>
+          <button type="filter__button button">All</button>
         </li>
         <li>
-          <button type="button">Web-sites</button>
+          <button type="filter__button button">Web-sites</button>
         </li>
         <li>
-          <button type="button">Apps</button>
+          <button type="filter__button button">Apps</button>
         </li>
         <li>
-          <button type="button">Design</button>
+          <button type="filter__button button">Design</button>
         </li>
         <li>
-          <button type="button">Marketing</button>
+          <button type="filter__button button">Marketing</button>
         </li>
       </ul>
-      <ul class="all-filters container">
-        <li class="portfolio-cards">
+      <ul class="portfolio__cards container">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/technoduck.jpg"
@@ -94,7 +94,7 @@
           <h4>Technoduck</h4>
           <p>Web-site</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/poster.jpg"
@@ -112,7 +112,7 @@
           <h4>Poster New Orlean vs Golden Star</h4>
           <p>Design</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/seafood.jpg"
@@ -130,7 +130,7 @@
           <h4>Seafood Restaurant</h4>
           <p>Apps</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="images/project-prime.jpg"
@@ -149,7 +149,7 @@
           <h4>Project Prime</h4>
           <p>Marketing</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/project-boxes.jpg"
@@ -168,7 +168,7 @@
           <h4>Project Boxes</h4>
           <p>Apps</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/inspiration.jpg"
@@ -188,7 +188,7 @@
           <h4>Inspiration has no Borders</h4>
           <p>Web-site</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/limited-edition.jpg"
@@ -207,7 +207,7 @@
           <h4>Limited Edition</h4>
           <p>Design</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/project-lab.jpg"
@@ -226,7 +226,7 @@
           <h4>Project LAB</h4>
           <p>Marketing</p>
         </li>
-        <li class="portfolio-cards">
+        <li class="portfolio-cards__item">
           <div class="overflow">
             <img
               src="./images/growing-business.jpg"
@@ -249,16 +249,16 @@
       </ul>
     </main>
     <!-- Footer -->
-    <footer class="footer-section portfolio-footer">
-      <div class="container footer-container">
-        <div class="adress-container">
-          <a href="https://webstudio.is" class="webstudio-logo-footer"
-            ><span class="web-footer">Web</span>Studio</a
+    <footer class="section--footer-section section--portfolio-footer">
+      <div class="container container--footer">
+        <div>
+          <a href="https://webstudio.is" class="footer__logo"
+            ><span class="footer__logo-part">Web</span>Studio</a
           >
           <address>
             <ul>
               <li>
-                <a class="efective-address">695 Park Ave, NY 10065, USA</a>
+                <a class="footer__adress">695 Park Ave, NY 10065, USA</a>
               </li>
               <li>
                 <a href="mailto:info@studio.com">info@studio.com</a>
@@ -269,9 +269,9 @@
             </ul>
           </address>
         </div>
-        <div class="social-links-footer">
+        <div class="footer__social-links">
           <h4>FIND US ON</h4>
-          <div class="social-links-icons">
+          <div class="footer__social-links-icons">
             <a
               href="https://www.instagram.com/"
               class="icon"
@@ -294,10 +294,10 @@
             </a>
           </div>
         </div>
-        <div class="footer-subscribe-form">
+        <div class="footer__subscribe-form">
           <h4>Subscribe to the newsletter</h4>
-          <div class="input-button">
-            <form class="footer-form" name="subscribe">
+          <div class="form__button button">
+            <form class="footer__form" name="subscribe">
               <input type="email" name="email" placeholder="E-mail" />
               <button type="submit">
                 Subscribe
